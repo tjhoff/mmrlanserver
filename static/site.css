@@ -1,0 +1,160 @@
+#center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+#header {
+    padding: 5px;
+    text-align: center;
+    background-color: #D0D0D0;
+}
+#content {
+    padding: 1em;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F0F0F0;
+    min-height: 400px;
+    width: 95%;
+    height: auto;
+}
+h1 {
+    color: #111111
+}
+#footer {
+  text-align: center;
+  margin: auto;
+}
+
+#links {
+  text-align: center;
+}
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+  background-color: black;
+  font-family: 'Lato', sans-serif;
+}
+.content-image{
+  width: 50%;
+  padding-right: 1em;
+  float: left;
+}
+
+.wl-wrapper{
+    margin: 0px auto;
+    width: 400px;
+    text-align: center;
+}
+
+.vertical-list{
+  display: block;
+}
+
+.icon-link{
+  color: black;
+  border-style: solid;
+  border-width: 2px;
+  padding: 3px;
+}
+
+.icon-link:link {
+    text-decoration: none;
+}
+
+.icon-link:visited {
+    text-decoration: none;
+}
+
+.icon-link:hover {
+    color: cyan;
+    border-color: cyan;
+    text-decoration: none;
+}
+
+.subtle-link{
+  color: grey;
+}
+.subtle-link:link {
+  text-decoration: none;
+}
+.subtle-link:hover {
+  text-decoration: underline;
+}
+
+.internal-link{
+  color: #505050;
+  text-decoration: none;
+}
+.internal-link:hover {
+  color: black;
+}
+
+.playerdiv {
+  display: inline-block;
+  text-align:center;
+  margin: auto;
+  font-variant: small-caps;
+  min-width: 200px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+.rankdiv {
+  background: white;
+  padding: 5px;
+  font-size: 150%;
+}
+
+.windiv {
+  background: #CCFFCC;
+  padding: 5px;
+  font-size: 100%;
+}
+
+.lossdiv{
+  background: #FFCCCC;
+  padding: 5px;
+  font-size: 100%;
+}
+
+.coolbutton{
+  background: #ff9c00;
+  text-decoration: none;
+  font-size: 200%;
+  color: white;
+  min-width: 100px;
+  border-style: none;
+  margin: auto;
+}
+
+.coolbutton.visited{
+  background: #ff9c00;
+  text-decoration: none;
+
+  color: white;
+}
+
+.coolbutton.hover{
+  background: #ffaebb;
+  text-decoration: none;
+}
+
+.gamecanvas {
+  padding: 0;
+    display: block;
+    margin: auto;
+  width: 400px;
+  height: 400px;
+  background: gray;
+}
+
+.project-image-link{
+  margin: auto;
+  padding: 1px;
+  width: 33%;
+  float: left;
+}

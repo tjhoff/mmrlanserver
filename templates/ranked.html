@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form action="/ranked" method="post">
+<div>
+  <h1 style="display:inline-block">TEAM A - AVG {{team_a_mmr|round|int}}</h1>
+  <button style="display:inline-block" class="coolbutton" name="winner" type="submit" value="A">WON</button>
+</div>
+{% for player in team_a %}
+{% with player=player %}
+{% include "player.html" %}
+{% endwith %}
+{% endfor %}
+<div >
+  <h1 style="display:inline-block">TEAM B - AVG {{team_b_mmr|round|int}}</h1>
+  <button style="display:inline-block" class="coolbutton" name="winner" type="submit" value="B">WON</button>
+</div>
+{% for player in team_b %}
+{% with player=player %}
+{% include "player.html" %}
+{% endwith %}
+{% endfor %}
+</form>
+{% endblock %}

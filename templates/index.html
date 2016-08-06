@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Players</h1>
+<div >
+<form style="display: inline-block" action="/add" method="post">
+	<input type="text" name="playername" value="">
+	<input class="coolbutton" type="submit" value="Add Player">
+</form>
+<a style="display: inline-block" href="/generateinitial" class="coolbutton">Start Ranking Matches</a>
+<a style="display: inline-block" href="/generatebalanced" class="coolbutton">Start New Game</a>
+</div>
+{% for player in players %}
+	{% with player=player %}
+	{% include "player.html" %}
+	{% endwith %}
+{% endfor %}
+
+{% endblock %}

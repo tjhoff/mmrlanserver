@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form action="/placematch/{{this_match}}" method="post">
+<h1>TEAM A</h1>
+<button class="coolbutton" name="winner" type="submit" value="A">WON</button>
+{% for player in team_a %}
+{% with player=player %}
+{% include "player.html" %}
+{% endwith %}
+{% endfor %}
+<h1>TEAM B</h1>
+<button class="coolbutton" name="winner" type="submit" value="B">WON</button>
+{% for player in team_b %}
+{% with player=player %}
+{% include "player.html" %}
+{% endwith %}
+{% endfor %}
+</form>
+{% endblock %}

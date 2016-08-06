@@ -1,0 +1,14 @@
+<div class="playerdiv">
+  <p font-size="200%">{{ player.name }}</p>
+  <div class="rankdiv">
+    <p>{{ player.rank|round|int }}</p>
+  </div>
+  <div class="windiv">
+    <p>+{{ player.wins() }}</p>
+  </div>
+
+  <div class="lossdiv">
+    <p>-{{ player.losses() }}</p>
+  </div>
+
+</div>
